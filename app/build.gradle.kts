@@ -1,6 +1,6 @@
 plugins {
     // Application
-    id ("com.android.application")
+    id("com.android.application")
 
     // Kotlin
     kotlin("android")
@@ -23,10 +23,10 @@ android {
 
     defaultConfig {
         applicationId = "com.timplifier.restobarapp"
-        minSdk =  AndroidConfig.minSdk
+        minSdk = AndroidConfig.minSdk
         targetSdk = AndroidConfig.targetSdk
-        versionCode =  1
-        versionName =  "1.0"
+        versionCode = 1
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,12 +35,13 @@ android {
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
-        sourceCompatibility =  JavaVersion.VERSION_1_8
-        targetCompatibility =  JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -87,5 +88,8 @@ dependencies {
 //    implementation(Dependencies.Firebase.analytics)
 //    implementation (Dependencies.Firebase.platform)
 //    implementation(Dependencies.Firebase.auth)
+
+    // SplashScreen
+    implementation(Dependencies.SplashScreen.splashScreen)
 
 }
