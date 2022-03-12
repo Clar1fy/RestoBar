@@ -79,6 +79,7 @@ dependencies {
 
     // Hilt
     implementation(Dependencies.Hilt.android)
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
     kapt(Dependencies.Hilt.compiler)
 
     //Firebase

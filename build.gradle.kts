@@ -12,6 +12,7 @@ plugins {
 
     // Hilt
     id(Dependencies.Hilt.plugin) version Dependencies.Hilt.version apply false
+    id("org.jetbrains.kotlin.jvm") version "1.6.10" apply false
 
 }
 
