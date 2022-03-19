@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.7">
       <module name="RestoBarApp.app" target="11" />
       <module name="RestoBarApp.buildSrc" target="11" />
+      <module name="RestoBarApp.data" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -19,5 +19,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "RestoBarApp"
 include( ":app")
-include(":data")
 include(":domain")
+include(":data")

@@ -1,4 +1,4 @@
-package com.timplifier.restobarapp.presentastion.ui.fragments
+package com.timplifier.restobarapp.presentation.ui.fragments
 
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject

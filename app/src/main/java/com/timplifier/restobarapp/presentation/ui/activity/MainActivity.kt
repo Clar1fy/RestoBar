@@ -1,4 +1,4 @@
-package com.timplifier.restobarapp.presentastion.ui.activity
+package com.timplifier.restobarapp.presentation.ui.activity
 
 import android.os.Bundle
 import androidx.activity.viewModels

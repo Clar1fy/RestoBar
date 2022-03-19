@@ -1,4 +1,4 @@
-package com.timplifier.restobarapp.presentastion.base
+package com.timplifier.restobarapp.presentation.base
 
 import android.app.Dialog
 import android.os.Bundle

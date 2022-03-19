@@ -95,14 +95,15 @@ object Dependencies {
     }
 
     object Firebase {
-        const val servicesVersion = "4.3.10"
+        private const val servicesVersion = "4.3.10"
         const val version = "com.google.firebase:firebase-firestore-ktx"
         const val analytics = "com.google.firebase:firebase-analytics-ktx"
         const val platform = "com.google.firebase:firebase-bom:29.2.0"
         const val auth = "com.google.firebase:firebase-auth-ktx"
         const val googleServices = "com.google.gms.google-services"
-        const val services = "com.google.gms:google-services"
+        const val services = "com.google.gms:google-services:$servicesVersion"
     }
+
     object SplashScreen {
         const val splashScreen = "androidx.core:core-splashscreen:1.0.0-beta01"
     }
