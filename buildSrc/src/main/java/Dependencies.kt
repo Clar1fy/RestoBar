@@ -47,7 +47,7 @@ object Dependencies {
     }
 
     object Navigation {
-        const val version = "2.4.1"
+        private const val version = "2.4.1"
 
         const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
         const val ui = "androidx.navigation:navigation-ui-ktx:$version"
@@ -56,7 +56,7 @@ object Dependencies {
     }
 
     object Hilt {
-        const val version = "2.41"
+        private const val version = "2.41"
 
         const val android = "com.google.dagger:hilt-android:$version"
         const val compiler = "com.google.dagger:hilt-compiler:$version"
@@ -97,7 +97,7 @@ object Dependencies {
     }
 
     object Firebase {
-        private const val boM_version ="29.2.1"
+        private const val boM_version = "29.2.1"
         private const val services_version = "4.3.10"
         const val firestore = "com.google.firebase:firebase-firestore-ktx"
         const val analytics = "com.google.firebase:firebase-analytics-ktx"

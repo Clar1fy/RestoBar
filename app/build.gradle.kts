@@ -98,8 +98,6 @@ dependencies {
     implementation(Dependencies.Firebase.auth)
 
 
-
-
     // SplashScreen
     implementation(Dependencies.SplashScreen.splashScreen)
 
