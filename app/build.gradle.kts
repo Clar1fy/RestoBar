@@ -15,7 +15,7 @@ plugins {
     id(Dependencies.Hilt.plugin)
 
     // Firebase
-//    id(Dependencies.Firebase.googleServices)
+    id(Dependencies.Firebase.googleServices)
 }
 
 android {
@@ -84,10 +84,21 @@ dependencies {
     kapt(Dependencies.Hilt.compiler)
 
     //Firebase
-//    implementation(Dependencies.Firebase.version)
-//    implementation(Dependencies.Firebase.analytics)
-//    implementation (Dependencies.Firebase.platform)
-//    implementation(Dependencies.Firebase.auth)
+
+    // BoM declaration
+    implementation(platform(Dependencies.Firebase.platform))
+
+    // Firestore
+    implementation(Dependencies.Firebase.firestore)
+
+    // Analytics
+    implementation(Dependencies.Firebase.analytics)
+
+    // Auth
+    implementation(Dependencies.Firebase.auth)
+
+
+
 
     // SplashScreen
     implementation(Dependencies.SplashScreen.splashScreen)

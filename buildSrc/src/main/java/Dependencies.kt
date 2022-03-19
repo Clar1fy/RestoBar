@@ -52,6 +52,7 @@ object Dependencies {
         const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
         const val ui = "androidx.navigation:navigation-ui-ktx:$version"
         const val safeArgsPlugin = "androidx.navigation.safeargs.kotlin"
+        const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:$version"
     }
 
     object Hilt {
@@ -60,6 +61,7 @@ object Dependencies {
         const val android = "com.google.dagger:hilt-android:$version"
         const val compiler = "com.google.dagger:hilt-compiler:$version"
         const val plugin = "com.google.dagger.hilt.android"
+        const val hiltPlugin = "com.google.dagger:hilt-android-gradle-plugin:$version"
     }
 
     // Data
@@ -95,13 +97,14 @@ object Dependencies {
     }
 
     object Firebase {
-        private const val servicesVersion = "4.3.10"
-        const val version = "com.google.firebase:firebase-firestore-ktx"
+        private const val boM_version ="29.2.1"
+        private const val services_version = "4.3.10"
+        const val firestore = "com.google.firebase:firebase-firestore-ktx"
         const val analytics = "com.google.firebase:firebase-analytics-ktx"
-        const val platform = "com.google.firebase:firebase-bom:29.2.0"
+        const val platform = "com.google.firebase:firebase-bom:$boM_version"
         const val auth = "com.google.firebase:firebase-auth-ktx"
         const val googleServices = "com.google.gms.google-services"
-        const val services = "com.google.gms:google-services:$servicesVersion"
+        const val services = "com.google.gms:google-services:$services_version"
     }
 
     object SplashScreen {

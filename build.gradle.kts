@@ -1,18 +1,16 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id("com.android.application") version "7.1.0" apply false
-    id("com.android.library") version "7.1.0" apply false
-    kotlin("android") version "1.6.10" apply false
 
-    // Firebase
-//    id(Dependencies.Firebase.services) version Dependencies.Firebase.servicesVersion apply false
-
-    // Navigation SafeArgs
-    id(Dependencies.Navigation.safeArgsPlugin) version Dependencies.Navigation.version apply false
-
-    // Hilt
-    id(Dependencies.Hilt.plugin) version Dependencies.Hilt.version apply false
-    id("org.jetbrains.kotlin.jvm") version "1.6.10" apply false
-
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:7.1.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
+        classpath(Dependencies.Navigation.safeArgs)
+        classpath(Dependencies.Hilt.hiltPlugin)
+        classpath(Dependencies.Firebase.services)
+    }
 }
 
